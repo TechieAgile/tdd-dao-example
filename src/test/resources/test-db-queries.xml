@@ -3,6 +3,21 @@
 
 <properties>
 	<entry key="getAllBookData">
-		select * from book
+		select name, isbin, price, author from book
+	</entry>
+
+	<entry key="getAuthorAllBook">
+		select name, isbin, price, author from book where
+		author = :author
+	</entry>
+
+	<entry key="getparticularBook">
+		select name, isbin, price, author from book where name
+		= :name
+	</entry>
+
+	<entry key="insertBookData">
+		insert into
+		= :name
 	</entry>
 </properties>

@@ -14,9 +14,9 @@
         http://www.springframework.org/schema/context/spring-context-4.0.xsd
         http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
 
-	<import resource="test-csv-data.xml"/>
-	
-		<!-- bean to load SQL query from db-queries.xml -->
+	<import resource="test-csv-data.xml" />
+
+	<!-- bean to load SQL query from db-queries.xml -->
 	<bean id="queryProps"
 		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
 		<property name="locations" value="classpath:/test-db-queries.xml" />
